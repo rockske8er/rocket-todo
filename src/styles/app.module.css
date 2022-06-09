@@ -1,0 +1,54 @@
+.container{
+  max-width: 46rem;
+  margin: 0 auto;
+  display: flex
+}
+
+.input__group{
+  display: flex;
+  width: 100%;
+  margin-top: -30px;
+  gap: 8px;
+}
+
+.input__add_todo{
+  height: 54px;
+  flex: 1;
+  border-radius: 8px;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  border: 0;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.input__add_todo::placeholder{
+  color: var(--gray-300);
+}
+
+.input__add_todo:focus-visible{
+  border: 1px solid var(--purple-400);
+}
+.btn__create_todo{
+  height: 54px;
+  background-color: var(--blue-400);
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  gap: 4px;
+
+}
+
+.btn__create_todo:hover{
+  background-color: var(--blue-200);
+}
