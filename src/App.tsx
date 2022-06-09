@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PlusCircle } from "phosphor-react";
 import s from "./styles/app.module.css";
 import { Header } from "./components/Header";
+import { Task } from "./components/Task";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -20,6 +21,8 @@ const App = () => {
             Criar <PlusCircle width={16} />
           </button>
         </div>
+
+        <Task />
       </main>
     </>
   );
