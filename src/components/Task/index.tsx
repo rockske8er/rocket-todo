@@ -1,9 +1,11 @@
-import React from "react";
+import { useState } from "react";
 import { Empty } from "../Empty";
+import { TaskList } from "../TaskList";
 
 import s from "./styles.module.css";
 
 const Task = () => {
+  const [tasks, settasks] = useState([]);
   return (
     <section className={s.container}>
       <header className={s.task__header}>
@@ -17,8 +19,13 @@ const Task = () => {
           <span className={s.task__badge}>5 de 10</span>
         </div>
       </header>
-
-      <Empty />
+      {tasks.length === 0 ? (
+        <>
+          <TaskList />
+        </>
+      ) : (
+        <Empty />
+      )}
     </section>
   );
 };

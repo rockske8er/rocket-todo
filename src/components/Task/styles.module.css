@@ -29,14 +29,6 @@
   font-weight: 700;
 }
 
-.task__created{
-
-}
-
-.task__completed{
-
-}
-
 .task__created .task__title{
   color: var(--blue-200);
 }
